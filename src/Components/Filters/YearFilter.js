@@ -25,9 +25,7 @@ const YearFilter = ({ label, active, setActiveFilter }) => {
       return
     }
     if (land_success) {
-      setUrl(
-        `${url}&launch_success=${launch_success}&launch_year=${yearFilter}`
-      )
+      setUrl(`${url}&land_success=${land_success}`)
       return
     }
 

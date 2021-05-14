@@ -27,7 +27,7 @@ const LandingFilter = ({ label, active, setActiveFilter }) => {
       return
     }
     if (launch_success) {
-      setUrl(`${url}&launch_year=${launch_success}`)
+      setUrl(`${url}&launch_success=${launch_success}`)
       return
     }
     setUrl(url)
