@@ -11,6 +11,7 @@ const Card = ({
   missionName,
 }) => {
   const id = missionId.map((id, index) => <p key={`${index} ${id}`}>{id}</p>)
+
   return (
     <article className='space-card'>
       <div className='img-box'>
