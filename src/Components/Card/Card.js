@@ -10,10 +10,10 @@ const Card = ({
   flightNumber,
   missionName,
 }) => {
-  const id = missionId.map((id, index) => <p key={`${index} ${id}`}>{id}</p>)
+  const id = missionId?.map((id, index) => <p key={`${index} ${id}`}>{id}</p>)
 
   return (
-    <article className='space-card'>
+    <article className='space-card' data-testid={'card'}>
       <div className='img-box'>
         <img
           src={!imageUrl ? placeHolderImage : imageUrl}
@@ -30,7 +30,7 @@ const Card = ({
         </div>
         <div className='space-card-details'>
           <span>Mission Ids:</span>
-          <p>{missionId.length ? id : 'No Id'}</p>
+          {missionId?.length ? id : <p>No Id</p>}
         </div>
         <div className='space-card-details'>
           <span>Launch Year:</span>
