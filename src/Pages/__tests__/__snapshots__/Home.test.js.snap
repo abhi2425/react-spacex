@@ -1,0 +1,194 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match home snapshot 1`] = `
+<div
+  className="App"
+  data-testid="Home"
+>
+  <h1
+    className="heading"
+  >
+    SpaceX Launch Programs
+  </h1>
+  <main>
+    <section
+      className="filters"
+      data-testid="filter"
+      style={
+        Object {
+          "marginLeft": "1.5rem",
+          "position": "fixed",
+        }
+      }
+    >
+      <h4>
+        Filters
+      </h4>
+      <p>
+        Launch Year 
+      </p>
+      <div
+        className="filter-container"
+      >
+        <button
+          className="filter-button "
+          data-testid="yearFilter"
+          onClick={[Function]}
+        >
+          2006
+        </button>
+        <button
+          className="filter-button "
+          data-testid="yearFilter"
+          onClick={[Function]}
+        >
+          2007
+        </button>
+        <button
+          className="filter-button "
+          data-testid="yearFilter"
+          onClick={[Function]}
+        >
+          2008
+        </button>
+        <button
+          className="filter-button "
+          data-testid="yearFilter"
+          onClick={[Function]}
+        >
+          2009
+        </button>
+        <button
+          className="filter-button "
+          data-testid="yearFilter"
+          onClick={[Function]}
+        >
+          2010
+        </button>
+        <button
+          className="filter-button "
+          data-testid="yearFilter"
+          onClick={[Function]}
+        >
+          2011
+        </button>
+        <button
+          className="filter-button "
+          data-testid="yearFilter"
+          onClick={[Function]}
+        >
+          2012
+        </button>
+        <button
+          className="filter-button "
+          data-testid="yearFilter"
+          onClick={[Function]}
+        >
+          2013
+        </button>
+        <button
+          className="filter-button "
+          data-testid="yearFilter"
+          onClick={[Function]}
+        >
+          2014
+        </button>
+        <button
+          className="filter-button "
+          data-testid="yearFilter"
+          onClick={[Function]}
+        >
+          2015
+        </button>
+        <button
+          className="filter-button "
+          data-testid="yearFilter"
+          onClick={[Function]}
+        >
+          2016
+        </button>
+        <button
+          className="filter-button "
+          data-testid="yearFilter"
+          onClick={[Function]}
+        >
+          2017
+        </button>
+        <button
+          className="filter-button "
+          data-testid="yearFilter"
+          onClick={[Function]}
+        >
+          2018
+        </button>
+        <button
+          className="filter-button "
+          data-testid="yearFilter"
+          onClick={[Function]}
+        >
+          2019
+        </button>
+        <button
+          className="filter-button "
+          data-testid="yearFilter"
+          onClick={[Function]}
+        >
+          2020
+        </button>
+      </div>
+      <p>
+        Successful Launch 
+      </p>
+      <div
+        className="filter-container"
+      >
+        <button
+          className="filter-button false"
+          onClick={[Function]}
+        >
+          true
+        </button>
+        <button
+          className="filter-button false"
+          onClick={[Function]}
+        >
+          false
+        </button>
+      </div>
+      <p>
+        Successful Landing 
+      </p>
+      <div
+        className="filter-container"
+      >
+        <button
+          className="filter-button false"
+          onClick={[Function]}
+        >
+          true
+        </button>
+        <button
+          className="filter-button false"
+          onClick={[Function]}
+        >
+          false
+        </button>
+      </div>
+    </section>
+    <section
+      className="space display-laptop"
+      style={
+        Object {
+          "marginLeft": "23.5rem",
+        }
+      }
+    >
+      <div
+        className="loader"
+      >
+        Loading...
+      </div>
+    </section>
+  </main>
+</div>
+`;

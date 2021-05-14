@@ -37,6 +37,7 @@ const YearFilter = ({ label, active, setActiveFilter }) => {
   return (
     <button
       className={`filter-button ${active}`}
+      data-testid='yearFilter'
       onClick={() => {
         setActiveFilter()
         yearlyFilterHandler()

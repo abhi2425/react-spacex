@@ -54,7 +54,7 @@ const Home = () => {
   }
 
   return (
-    <div className='App'>
+    <div className='App' data-testid='Home'>
       <h1 className='heading'>SpaceX Launch Programs</h1>
       <main>
         <Filters />

@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from 'react'
+import React, { memo, useMemo, useState } from 'react'
 import { useLaunchContext } from '../../Contexts/LaunchContext'
 import { getYearlyFilters } from '../../Utils/getYearFilters'
 import LandingFilter from './LandingFilter'
@@ -64,6 +64,7 @@ const Filters = () => {
 
   return (
     <section
+      data-testid={'filter'}
       className='filters'
       style={{
         position: screenWidth <= 700 ? 'relative' : 'fixed',
@@ -81,4 +82,4 @@ const Filters = () => {
   )
 }
 
-export default Filters
+export default memo(Filters)
