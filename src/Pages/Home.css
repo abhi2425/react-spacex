@@ -1,0 +1,65 @@
+main {
+  position: relative;
+  display: flex;
+}
+.heading {
+  font-size: 4rem;
+  margin: 2rem;
+}
+
+.space {
+  display: grid;
+  justify-items: center;
+  margin-top: -1.5rem;
+}
+
+.display-tab {
+  grid-template-columns: repeat(2, 1fr);
+}
+.display-laptop {
+  grid-template-columns: repeat(4, 1fr);
+}
+.filters {
+  width: 20rem;
+  background-color: rgb(226, 224, 224);
+  border-radius: 0.5rem;
+  padding: 2rem;
+  margin-bottom: 1rem;
+  height: min-content;
+}
+.filters h4 {
+  font-size: 2.2rem;
+}
+.filters p {
+  font-size: 1.6rem;
+  border-bottom: 0.3rem solid rgb(204, 202, 202);
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+.filter-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 1rem;
+}
+
+.filter-button {
+  cursor: pointer;
+  background: transparent;
+  padding: 0.3rem 1rem;
+  border: none;
+  font-size: 1.5rem;
+  border-radius: 0.25rem;
+  background-color: rgba(131, 207, 68, 0.575);
+  margin: 0.8rem 1.5rem;
+}
+.active-filter {
+  background-color: rgb(119, 167, 42);
+}
+
+@media screen and (max-width: 700px) {
+  main {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
