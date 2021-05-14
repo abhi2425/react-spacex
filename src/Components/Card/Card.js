@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { memo } from 'react'
 import './Card.css'
 import placeHolderImage from '../../Assets/spaceship_placeholder.png'
 const Card = ({
@@ -18,6 +18,8 @@ const Card = ({
           src={!imageUrl ? placeHolderImage : imageUrl}
           alt={`${missionName} Spaceship`}
           loading='lazy'
+          width='auto'
+          height='auto'
         />
       </div>
       <div className='space-card-container'>
@@ -52,4 +54,4 @@ const Card = ({
   )
 }
 
-export default Card
+export default memo(Card)
