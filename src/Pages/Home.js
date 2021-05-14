@@ -54,25 +54,34 @@ const Home = () => {
   }
 
   return (
-    <div className='App' data-testid='Home'>
+    <div className={`${screenWidth <= 700 && 'App'}`} data-testid='Home'>
       <h1 className='heading'>SpaceX Launch Programs</h1>
-      <main>
-        <Filters />
-        <section
-          className={getStyles()}
-          style={{ marginLeft: screenWidth <= 700 ? '0' : '23.5rem' }}
-        >
-          {loading ? (
-            <Loading />
-          ) : spaceShips.length === 0 ? (
-            <h1 style={{ marginTop: '1rem' }}>
-              No Results found For Your Filter!
-            </h1>
-          ) : (
-            spaceShips
+      <Filters />
+      {loading ? (
+        <Loading />
+      ) : (
+        <>
+          <main>
+            <section
+              className={getStyles()}
+              style={{ marginLeft: screenWidth <= 700 ? '0' : '23.5rem' }}
+            >
+              {spaceShips.length === 0 ? (
+                <h1 style={{ marginTop: '1rem' }}>
+                  No Results found For Your Filter!
+                </h1>
+              ) : (
+                spaceShips
+              )}
+            </section>
+          </main>
+          {spaceShips.length > 0 && (
+            <h2 className='developer'>
+              <span>Developed By-:</span>Abhinav Jha
+            </h2>
           )}
-        </section>
-      </main>
+        </>
+      )}
     </div>
   )
 }

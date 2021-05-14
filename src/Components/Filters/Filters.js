@@ -67,6 +67,7 @@ const Filters = () => {
       data-testid={'filter'}
       className='filters'
       style={{
+        zIndex: '1',
         position: screenWidth <= 700 ? 'relative' : 'fixed',
         marginLeft: screenWidth <= 700 ? '0' : '1.5rem',
       }}
