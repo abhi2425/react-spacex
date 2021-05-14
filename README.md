@@ -14,9 +14,9 @@ You may also see any lint errors in the console.
 
 ## Lighthouse Performance
 
-<img src='https://res.cloudinary.com/abhicloud2425/image/upload/v1621004855/lighthouse_ugiqfj.png'alt='lighthouse' />
+<img src='https://res.cloudinary.com/abhicloud2425/image/upload/v1621004855/lighthouse_ugiqfj.png' alt='lighthouse' />
 
-<img src='https://res.cloudinary.com/abhicloud2425/image/upload/v1621004855/lighthouse-2_vocfpk.png'alt='lighthouse' />
+<img src='https://res.cloudinary.com/abhicloud2425/image/upload/v1621004855/lighthouse-2_vocfpk.png' alt='lighthouse' />
 
 ### `npm test`
 
